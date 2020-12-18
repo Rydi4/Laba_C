@@ -3,21 +3,22 @@
 #include <stdlib.h>
 int func(char text[100], int word ) 
 {
+	int flag = 0;
 	for (int i = 0; i < strlen(text); i++) 
 	{
-		if (text[i-1] != ' ' && text[i] == ' ' && text[i+1] != ' ') 
+		if (text[i] != ' ' && text[i+1] == ' ') 
+		{
+			flag = 1;
+		}
+		if (flag == 1 && text[i] == ' ' && text[i + 1] != ' ')
 		{
 			word++;
 		}
 	}
 	int i = strlen(text);
-	if (text[0] != ' ' && text[i - 1] != ' ')
+	if (text[i-1] != ' ')
 	{
 		word++;
-	}
-	if (text[0] == ' ' && text[i - 1] == ' ')
-	{
-		word--;
 	}
 	printf("Количество слов: %d", word);
 	return 0;
