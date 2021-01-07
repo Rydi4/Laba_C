@@ -15,7 +15,7 @@
   * Функція 'orderliness'. Сортурує двумерний масив.
   * Функція 'compare'. Порівнює елементи масива.
 
- ![block_shema](https://https://github.com/Rydi4/Laba_C/blob/master/Laba7/doc/assets/Блок-схема.png)
+ ![block_shema](https://github.com/Rydi4/Laba_C/blob/master/Laba11/doc/assets/Блок-схема.png)
  
 - Структура програми:
 
