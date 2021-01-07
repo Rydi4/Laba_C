@@ -24,7 +24,7 @@
 ├── doc
 │   ├── assets
 │   │   └── Блок-схема.png
-│   └── lab05.md
+│   └── lab07.md
 ├── Doxyfile
 ├── Makefile
 ├── README.md
