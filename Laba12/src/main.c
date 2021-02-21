@@ -1,6 +1,7 @@
 ﻿
 #include <iostream>
 #include <locale.h>
+#include <stdio.h>
 
 int сalculating(int number, int i, float calc, int answer) {
     calc = number % i;
@@ -46,11 +47,11 @@ int func2(int number, int i, float calc, int answer) {
         conclusion(answer, number);
     }
     else {
-        printf("Не подходит условию");
+        printf(" Не подходит условию ");
     }
     return 0;
 }
-int func3(char number, int i, float calc, int answer) {
+int func3(int number, int i, float calc, int answer) {
     if (number > 1) {
         for (int i = 1; i < number; i++) {
             сalculating(number, i, calc, answer);
@@ -59,18 +60,18 @@ int func3(char number, int i, float calc, int answer) {
         conclusion(answer, number);
     }
     else {
-        putc("Не подходит условию");
+        puts ("Не подходит условию");
     }
     return 0;
 }
 int main() {
     setlocale(LC_ALL, "Rus");
-    char number[80];
+    int number;
     int i = 1; // делитель
     float calc = 0; // Результат деления
     int answer = 0;
-       putc("Заданное число = ");
-       getc(number);
-       func1(number, i, calc, answer);
+       puts ("Заданное число =");
+       number = getchar ();
+       func3(number, i, calc, answer);
     return 0;
 }
